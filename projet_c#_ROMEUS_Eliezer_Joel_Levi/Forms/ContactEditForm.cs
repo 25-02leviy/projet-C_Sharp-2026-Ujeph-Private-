@@ -18,9 +18,11 @@ public partial class ContactEditForm : Form
 
     private void Save_Click(object? sender, EventArgs e)
     {
-        if (string.IsNullOrWhiteSpace(firstNameTextBox.Text) || string.IsNullOrWhiteSpace(lastNameTextBox.Text))
+        if (string.IsNullOrWhiteSpace(firstNameTextBox.Text) ||
+            string.IsNullOrWhiteSpace(lastNameTextBox.Text) ||
+            (string.IsNullOrWhiteSpace(phoneTextBox.Text) && string.IsNullOrWhiteSpace(emailTextBox.Text)))
         {
-            MessageBox.Show("Le prénom et le nom sont obligatoires.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            MessageBox.Show("Le prénom, le nom et au moins un moyen de contact (téléphone ou e-mail) sont obligatoires.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             DialogResult = DialogResult.None;
             return;
         }

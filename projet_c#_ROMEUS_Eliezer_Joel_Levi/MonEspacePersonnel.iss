@@ -1,5 +1,5 @@
 #define MyAppName "Secret"
-#define MyAppVersion "1.0.0"
+#define MyAppVersion "1.0.1"
 #define MyAppPublisher "Romeus Eliezer"
 #define MyAppExeName "Secret.exe"
 #define PublishedExeName "projet_c#_ROMEUS_Eliezer_Joel_Levi.exe"

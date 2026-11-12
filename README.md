@@ -78,4 +78,4 @@ Les colonnes `user_id` sont des clés étrangères vers `users.id`. La suppressi
 
 Palette principale : teal `#00AA99`, turquoise `#00DAC6`, aqua `#00C5B5`, blanc cassé `#F7F3F1` et corail `#E29777`.
  eb8dd3f (Premier commit)
-# projet-C_Sharp-2026-Ujeph-Private-
+

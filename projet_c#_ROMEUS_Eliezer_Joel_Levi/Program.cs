@@ -16,6 +16,10 @@ namespace projet_c__ROMEUS_Eliezer_Joel_Levi
             ApplicationConfiguration.Initialize();
             try
             {
+                // Affiche le splash avant l'initialisation MySQL et l'écran d'authentification.
+                using (var startupLoading = new loading())
+                    startupLoading.ShowDialog();
+
                 var data = new AppData();
                 data.InitializeAsync().GetAwaiter().GetResult();
                 var firstLaunch = !data.HasUserAsync().GetAwaiter().GetResult();

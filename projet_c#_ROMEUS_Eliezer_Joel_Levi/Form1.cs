@@ -33,6 +33,7 @@ namespace projet_c__ROMEUS_Eliezer_Joel_Levi
                 ? new Point(50, 359)
                 : new Point(50, 292);
             this.Size =  firstLaunch ? new(503, 503) : new Size(500, 423);
+          
         }
 
 

@@ -1,0 +1,7 @@
+.vs/
+bin/
+obj/
+*.user
+**/bin/ 
+**/obj/
+# Visual Studio Code
